@@ -33,9 +33,9 @@ namespace CSHARP_Listes_Exo2
             //Supprimer Bootstrap
             languages.Remove("Bootstrap");
 
-            //Modifier Javacrit en Javascript.
-            languages.Remove("Javacrit");
-            languages.Insert(2, "Javascript");
+            //Modifier Javacrit en Javascript
+            int index = languages.IndexOf("Javacrit");
+            languages[index]= "Javascript";
 
             //Ajouter C dans la liste.
             languages.Add("C");
